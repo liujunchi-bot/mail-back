@@ -1,0 +1,214 @@
+/* 全屏自适应布局  */
+html,body{width:100%;height:100%;overflow:hidden;margin:0;}
+body{
+	background-image: url('../image/page_background.jpg');
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+html{_height:auto;_padding:100px 0 50px;}
+/* 框架布局 */
+.g-hd,.g-sd,.g-mn,.g-ft{position:absolute;left:0;}
+.g-hd,.g-ft{width:100%;}
+.g-sd,.g-mn{top:85px;bottom:50px;_height:100%;overflow:auto;}
+.g-hd{top:0;height:70px;}
+.g-sd{width:200px;left: 10px}
+.g-mn{_position:relative;left:230px;right:0;_top:0;_left:0;_margin-left:300px;margin-right: 15px;}
+.g-ft{bottom:0;height:50px;}
+.g-sd,.g-mn{background-color: white;opacity: 0.8;}
+.g-hd{opacity:0.6;background-color: white;background-size: 100% 100%;}
+/* 左边栏 */
+.selected{
+		padding-top: 12px;
+		padding-bottom: 12px;
+		width: 100%;
+		font-size: 20px;
+		background-color: skyblue;
+		text-align: center;
+	}
+.unselected{
+		padding-top: 12px;
+		padding-bottom: 12px;
+		width: 100%;
+		font-size: 20px;
+		background-color: white;
+		text-align: center;
+	}
+.m-flag:hover{
+	background-color: lightblue;
+}
+/* 导航栏 */
+.quit_style,.help_style{
+		color: darkblue;
+		position: absolute;
+		top: 20px;
+		text-decoration: none;color: black
+	}
+.quit_style{
+		right: 10px;
+	}	
+.help_style{
+		right: 50px;
+	}
+
+/* 右边栏 */
+.l-con{
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+/* 发邮件样式 */
+.table_style table td{
+		border-bottom: 1px solid #808080;
+		padding: 2px;
+		font-weight: bold;
+		background-color: white;
+	}
+.send-mail{width: 95%}
+
+/* 收件箱、已发送 表头固定内容滚动的表格  */
+.m-table{margin:0 0 20px;line-height:18px;padding-right: 15px;}
+.m-table .scroll{max-height:370px;border:1px solid #ddd;border-top:0;overflow-y:auto;}
+.m-table table{width:100%;table-layout:fixed;}
+.m-table th,.m-table td{padding-top:10px;padding-bottom:10px;padding-left:10px;border:1px solid #ddd;}
+.m-table th:first-child,.m-table td:first-child{width:40px;}
+.m-table th:nth-child(2),.m-table td:nth-child(2){width:200px;}
+.m-table th{font-weight:bold;background:#eee;}
+.m-table thead th:last-child,.m-table tbody td:last-child{width: auto}
+.m-table thead th:nth-child(3),.m-table tbody td:nth-child(3){width:500px;}
+.m-table thead th:nth-child(4),.m-table tbody td:nth-child(4){width:150px;}
+.m-table tbody tr:nth-child(2n){background:#fafafa;}
+.m-table tbody tr:first-child td{border-top:0;}
+.m-table tbody tr:last-child td{border-bottom:0;}
+.m-table tbody tr td:first-child{border-left:0;}
+.m-table tbody tr td:last-child{border-right:0;}
+
+/* 普通翻页器-默认居中 */
+.m-page{margin:10px 0 0;text-align:center;line-height:32px;font-size:0;letter-spacing:-0.307em;word-wrap:normal;white-space:nowrap;color:#999;}
+.m-page a,.m-page i{display:inline-block;vertical-align:top;padding:0 12px;margin-left:-1px;border:1px solid #ddd;font-size:12px;letter-spacing:normal;text-shadow:0 1px #fff;background:#fff;-webkit-transition:background-color 0.3s;-moz-transition:background-color 0.3s;-ms-transition:background-color 0.3s;transition:background-color 0.3s;}
+.m-page a,.m-page a:hover{text-decoration:none;color:#39c;}
+.m-page a:first-child{margin-left:0;border-top-left-radius:5px;border-bottom-left-radius:5px;}
+.m-page a:last-child{margin-right:0;border-top-right-radius:5px;border-bottom-right-radius:5px;}
+.m-page a.pageprv:before,.m-page a.pagenxt:after{font-weight:bold;font-family:\5b8b\4f53;vertical-align:top;}
+.m-page a.pageprv:before{margin-right:3px;content:'\3C';}
+.m-page a.pagenxt:after{margin-left:3px;content:'\3E';}
+.m-page a:hover{background:#f5f5f5;}
+.m-page a:active{background:#f0f0f0;}
+.m-page a.z-crt,.m-page a.z-crt:hover,.m-page a.z-crt:active{cursor:default;color:#999;background:#f5f5f5;}
+.m-page a.z-dis,.m-page a.z-dis:hover,.m-page a.z-dis:active{cursor:default;color:#ccc;background:#fff;}
+/* 居左 */
+.m-page-lt{text-align:left;}
+/* 居右 */
+.m-page-rt{text-align:right;}
+/* 较小 */
+.m-page-sm{line-height:22px;}
+.m-page-sm a,.m-page-sm i{padding:0 8px;}
+/* 分离 */
+.m-page-sr a,.m-page-sr i{margin:0 3px;border-radius:5px;}
+.m-page-sr i{border:0;}
+.m-page-sr a:first-child,.m-page-sr a:last-child{border-radius:5px;}
+
+/* 系统设置 */
+.c-msize-but{
+	height: 25px;
+	width: 50px;
+}
+.input_msize{
+	width: 80px;display: inline;
+}
+.input_msize_b{
+	display: inline;
+}
+
+fieldset{padding-right: 15px;margin-right: 15px; margin-top:20px; margin-bottom: 20px;}
+.div-inl{display: inline;}
+.c-nick-but{height: 16px;width: 16px;}
+.c-nick,.c-nick-but{display: inline}
+.c-nick,.c-nick-but,.c-ps,.c-mail,.c-msize,.state-table,.server-table{padding-left: 20px;}
+.no-input-bg{border: none;background-color:white; opacity: 1;}
+/* 用户管理 表头固定内容滚动的表格  */
+.user-table{margin:0 0 20px;line-height:18px;}
+.user-table .scroll{max-height:340px;border:1px solid #ddd;border-top:0;overflow-y:auto;}
+.user-table table{width:100%;table-layout:fixed;}
+.user-table th,.user-table td{padding-top:10px;padding-bottom:10px;padding-left:10px;border:1px solid #ddd;}
+.user-table th{font-weight:bold;background:#eee;}
+
+.user-table th:first-child,.user-table td:first-child{width:100px;}
+.user-table th:nth-child(2),.user-table td:nth-child(2){width:200px;}
+.user-table thead th:nth-child(3),.user-table tbody td:nth-child(3){width:200px;}
+.user-table thead th:nth-child(4),.user-table tbody td:nth-child(4){width:50px;}
+.user-table thead th:nth-child(5),.user-table tbody td:nth-child(5){width:70px;}
+.user-table thead th:nth-child(6),.user-table tbody td:nth-child(6){width:70px;}
+.user-table thead th:nth-child(7),.user-table tbody td:nth-child(7){width:100px;}
+.user-table thead th:last-child,.user-table tbody td:last-child{width: auto}
+.user-table tbody td:nth-child(4),
+.user-table tbody td:nth-child(5),
+.user-table tbody td:nth-child(6),
+.user-table tbody td:nth-child(7){text-align: center}
+
+.user-table tbody tr:nth-child(2n){background:#fafafa;}
+.user-table tbody tr:first-child td{border-top:0;}
+.user-table tbody tr:last-child td{border-bottom:0;}
+.user-table tbody tr td:first-child{border-left:0;}
+.user-table tbody tr td:last-child{border-right:0;}
+
+/* 添加用户 */
+.add-u-but{
+	display:inline-block;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;padding:0 12px;height:28px;line-height:28px;border:1px solid #2d88bf;font-size:12px;letter-spacing:1px;text-align:center;vertical-align:middle;cursor:pointer;word-wrap:normal;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);text-shadow:0 -1px rgba(0,0,0,0.2);background:-webkit-gradient(linear,0% 0%,0% 100%,from(#6dbde4),to(#399dd8));background:-webkit-linear-gradient(#6dbde4,#399dd8);background:-moz-linear-gradient(#6dbde4,#399dd8);background:-ms-linear-gradient(#6dbde4,#399dd8);background:linear-gradient(#6dbde4,#399dd8);
+}
+
+input, button{
+	border: 1px solid #cbcbcb;
+	border-radius: 3px;
+}
+
+/* 黑名单域名管理 表头固定内容滚动的表格  */
+.b-account{margin:0 0 20px;line-height:18px;padding-right: 5px;padding-right: 15px;}
+.b-account .scroll{max-height:125px;border:1px solid #ddd;border-top:0;overflow-y:auto;}
+.b-account table{width:100%;table-layout:fixed;}
+.b-account th,.b-account td{padding-top:10px;padding-bottom:10px;padding-left:10px;border:1px solid #ddd;}
+.b-account th{font-weight:bold;background:#eee;}
+
+.b-account th:first-child,.b-account td:first-child{width:250px;}
+.b-account th:last-child,.b-account td:last-child{width:auto}
+.b-account th:nth-child(2),.b-account td:nth-child(2){width:250px;}
+.b-account tbody tr:nth-child(2n){background:#fafafa;}
+.b-account tbody tr:first-child td{border-top:0;}
+.b-account tbody tr:last-child td{border-bottom:0;}
+.b-account tbody tr td:first-child{border-left:0;}
+.b-account tbody tr td:last-child{border-right:0;}
+
+/* 日志管理 表头固定内容滚动的表格  */
+.l-log{margin:0 0 20px;line-height:18px;padding-right: 5px;padding-right: 15px;}
+.l-log .scroll{max-height:300px;border:1px solid #ddd;border-top:0;overflow-y:auto;}
+.l-log table{width:100%;table-layout:fixed;}
+.l-log th,.l-log td{padding-top:10px;padding-bottom:10px;padding-left:10px;border:1px solid #ddd;}
+.l-log th{font-weight:bold;background:#eee;}
+
+.l-log th:first-child,.l-log td:first-child{width:50px;}
+.l-log th:last-child,.l-log td:last-child{width:auto;}
+.l-log th:nth-child(2),.l-log td:nth-child(2){width:800px;}
+.l-log tbody tr:nth-child(2n){background:#fafafa;}
+.l-log tbody tr:first-child td{border-top:0;}
+.l-log tbody tr:last-child td{border-bottom:0;}
+.l-log tbody tr td:first-child{border-left:0;}
+.l-log tbody tr td:last-child{border-right:0;}
+
+/* 黑名单ip管理 表头固定内容滚动的表格  */
+.b-ip{margin:0 0 20px;line-height:18px;padding-right: 5px;padding-right: 15px;}
+.b-ip .scroll{max-height:125px;border:1px solid #ddd;border-top:0;overflow-y:auto;}
+.b-ip table{width:100%;table-layout:fixed;}
+.b-ip th,.b-ip td{padding-top:10px;padding-bottom:10px;padding-left:10px;border:1px solid #ddd;}
+.b-ip th{font-weight:bold;background:#eee;}
+
+.b-ip th:first-child,.b-ip td:first-child{width:250px;}
+.b-ip th:last-child,.b-ip td:last-child{width:auto}
+.b-ip th:nth-child(2),.b-ip td:nth-child(2){width:250px;}
+.b-ip tbody tr:nth-child(2n){background:#fafafa;}
+.b-ip tbody tr:first-child td{border-top:0;}
+.b-ip tbody tr:last-child td{border-bottom:0;}
+.b-ip tbody tr td:first-child{border-left:0;}
+.b-ip tbody tr td:last-child{border-right:0;}
+

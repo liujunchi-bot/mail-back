@@ -1,0 +1,96 @@
+/*中间部*/
+.middle{
+    margin: 0 auto;
+    width: 80%;
+    min-height: 500px;
+    overflow: hidden;
+    zoom: 1;
+}
+/*中间左边*/
+.middle > .middle-left{
+    /*background: lightblue;*/
+    width: 25%;
+    margin: 10% 0 10% 5%;
+    float: left;
+}
+.middle > .middle-left > .login-pictures-title{
+    margin: 15px 0 15px 0;
+    color: #6f95c8;
+    font-size: 24px;
+}
+.middle > .middle-left > p{
+    font-size: 14px;
+    line-height: 24px;
+}
+/*中间的中间部分*/
+.middle >.middle-middle{
+    width: 15%;
+    height: 15%;
+    margin-top: 18%;
+    float: left;
+}
+.middle >.middle-middle >img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*中间的右部分*/
+.middle-right{
+    /*height: 300px;*/
+    margin-top: 7%;
+    margin-right: 10%;
+    /*background: lightblue;*/
+    float: right;
+    border: 1px solid #a0b1c4;
+    border-radius: 5px;
+}
+.middle-right > .form-title{
+    width: 100%;
+    height: 50px;
+    line-height: 45px;
+    margin: 15px 0 35px 0;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid #a0b1c4;
+}
+
+.middle-right > #loginForm{
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.middle-right > #loginForm > .input1{
+    /*display: block;*/
+    padding:11px 0 10px 16px ;
+    margin: 6px;
+    width: 70%;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #a0b1c4;
+
+}
+.middle-right > #loginForm > .login-button{
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    background: #6f95c8;
+    margin: 20px;
+    width: 75%;
+    line-height: 40px;
+    height: 45px;
+}
+.middle-right > .forget{
+    text-align: center;
+    height: 70px;
+}
+.middle-right > .forget > a{
+    line-height: 70px;
+    display: inline-block;
+    padding: 0px 20px 0px 37px;
+}
+
+

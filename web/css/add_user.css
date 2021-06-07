@@ -1,0 +1,29 @@
+/* 全屏自适应布局  */
+html,body{width:100%;height:100%;overflow:hidden;margin:0;}
+body{
+	background-image: url('../image/page_background.jpg');
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	background-attachment: fixed;
+	background-size: 100% 100%;}
+html{_height:auto;_padding:100px 0 50px;}
+
+.a-hd,.a-sd,.a-mn,.a-ft{position:absolute;left:0;}
+.a-hd,.a-ft{width:100%;}
+.a-sd,.a-mn{top:85px;bottom:100px;_height:100%;overflow:auto;}
+.a-hd{top:0;height:70px;}
+.a-sd{width:200px;left: 10px}
+.a-mn{_position:relative;left:240px;right:0;_top:0;_left:0;_margin-left:300px;margin-right: 15px;}
+.a-ft{bottom:0;height:70px;}
+.a-mn{background-color: white;opacity: 0.9; width: 800px;border-radius: 5px;}
+.a-mn{padding:50px 50px;}
+
+fieldset{margin: 0 auto;float:none;}
+
+.inputbtn{ border: solid 3px skyblue; line-height: 18px; font-size:16px; padding: 2px; width: 210px; background-color: skyblue}
+.inputtxt{ border: solid 3px skyblue; padding: 3px; line-height: 18px;border-radius: 3px ; font-size:16px; width: 200px; }
+fieldset{ padding: 30px; width: 720px; background:#FFF; float:left;}
+p{ text-align: center;}
+a{text-decoration: none;color:black;}
+

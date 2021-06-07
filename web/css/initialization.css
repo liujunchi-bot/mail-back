@@ -1,0 +1,11 @@
+/*初始化*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a{list-style-type: none;text-decoration: none;color: #1d5494;cursor: pointer;}
+a:hover{color: rgb(78,202,216);}
+body {
+    width: 100%;
+    font-family: 'Microsoft YaHei UI';
+}

@@ -1,0 +1,56 @@
+/*中间部*/
+.register{
+    /*background: lightblue;*/
+    width: 80%;
+    height: 523px;
+    margin: 0 auto;
+}
+.register > .main-body{
+    /*background: lightcoral;*/
+    width: 50%;
+    height: 100%;
+    margin: 0 0 0 30%;
+    /*padding: 40px 30px 0;*/
+}
+.register > .main-body > .title{
+    padding:80px 0 0 0 ;
+    overflow: hidden;
+    zoom: 1;
+}
+.register > .main-body > .title > h2{
+    float: left;
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 37px;
+}
+.register > .main-body > .title > a{
+    float: right;
+    padding-right:16%;
+    /*font-size: 16px;*/
+    margin-top: 2%;
+}
+.register > .main-body > .m-body > #loginForm {
+    width: 80%;
+    height: 46px;
+}
+.register > .main-body > .m-body > #loginForm > input{
+    margin:30px 0 0 0 ;
+    height: 75%;
+    width: 100%;
+    border: 1px solid #cbcbcb;
+    border-radius: 3px;
+    padding:11px 0 10px 16px ;
+    font-size: 16px;
+}
+.register > .main-body > .m-body > #loginForm >.reg-btw{
+    /*padding:11px 0 10px 16px ;*/
+    cursor: pointer;
+    margin:30px 0 0 0 ;
+    height: 110%;
+    width: 104%;
+    border: none;
+    border-radius: 3px;
+    font-size: 22px;
+    background: #3b78dd;
+    color: #fff;
+}
